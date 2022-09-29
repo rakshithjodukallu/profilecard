@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cyan: hsl(185, 75%, 39%);
+    --gray: hsl(227, 10%, 46%);
+}
+
+body{
+    
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--cyan);
+}
+
+/* card section */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.topimage img{
+    position: absolute;
+    max-width: 100%;
+    width: 70%;
+    top: -428px;
+    left: -254px;
+    object-fit: cover;
+    transform: rotate(354deg);
+}
+
+.bottomimage img{
+    position: absolute;
+    max-width: 100%;
+    width: 59%;
+    bottom: -369px;
+    right: -100px;
+    z-index: -1;
+    transform: rotate(341deg);
+
+}
+
+.card-textgrid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carditem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 2px rgb(143 143 143);
+    border: none;
+}
+
+.cardbody {
+   border-top: 1px solid hsl(227deg 25% 88%);
+    
+}
+
+.card-img-top{
+    border-radius: 20px 20px 0 0;
+}
+
+h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.subtext{
+    text-align: center;
+}
+.vector-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.vector-image img{
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
